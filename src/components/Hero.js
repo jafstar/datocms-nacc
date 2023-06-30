@@ -5,7 +5,7 @@ import { Image } from "react-datocms"
 
 export default function Hero({ record: { heroTitle, heroSubtitle, heroImage } }) {
   return (
-    <section className="position-relative bg-light hero">
+    <section className="position-relative hero">
       <Container>
         <Row className="align-items-center">
           <Col lg={6}>

@@ -5,10 +5,10 @@ export default function Footer({ links }) {
   return (
     <section className="footer section">
       <Container>
-        <Row>
-          <Col lg={4}>
+        {/* <Row>
+         <Col lg={4}>
             <div className="mb-4">
-              <p className="text-muted mt-4 mb-2">your-email@email.com</p>
+              <p className="text-muted mt-4 mb-2">mfumu1@gmail.com</p>
               <h6 className="text-muted font-weight-normal">+1 555-2368</h6>
             </div>
           </Col>
@@ -50,12 +50,12 @@ export default function Footer({ links }) {
               </Col>
             </Row>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row className="mt-5">
           <Col md={12}>
             <div className="text-center text-muted">
-              <p className="mb-0 f-15">{`©${new Date().getFullYear()} - Your Company Name`}</p>
+              <p className="mb-0 f-15">{`©${new Date().getFullYear()} - NACC`}</p>
             </div>
           </Col>
         </Row>

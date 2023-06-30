@@ -4,6 +4,7 @@ import { Image } from "react-datocms"
 import Link from "next/link"
 
 export default function Service({ service }) {
+  console.log("service: ", service)
   return service.id % 2 !== 0 ? (
     <Row className="align-items-center mt-5 text-left" key={service.id}>
       <Col md={5}>
@@ -13,7 +14,7 @@ export default function Service({ service }) {
         <div className="mt-5 mt-sm-0 mb-4 text-left">
           <h5 className="text-dark font-weight-normal mb-3 pt-3">{service.title}</h5>
           <p className="text-muted mb-3 f-15">{service.text}</p>
-          <Link href={service.ctaLink}>
+          <Link href={'#'}>
             <a className="f-16 text-warning">
               Try It Now <span className="right-icon ml-2">&#8594;</span>
             </a>
@@ -27,7 +28,7 @@ export default function Service({ service }) {
         <div className="mb-4 text-left">
           <h5 className="text-dark font-weight-normal mb-3 pt-3">{service.title}</h5>
           <p className="text-muted mb-3 f-15">{service.text}</p>
-          <Link href={service.ctaLink}>
+          <Link href={'#'}>
             <a className="f-16 text-warning">
               Try It Now <span className="right-icon ml-2">&#8594;</span>
             </a>
